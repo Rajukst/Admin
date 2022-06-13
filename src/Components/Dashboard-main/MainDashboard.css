@@ -1,0 +1,48 @@
+.left-content{
+    height: 100vh;
+    border-right: 1px dotted lightgray;
+}
+.wellcome-heading{
+    text-align: left;
+}
+.firstColumn{
+    background-color: rgb(180, 225, 240);
+    border-radius: 15px;
+}
+.secondColumn{
+    background-color: rgb(101, 170, 212);
+    border-radius: 15px;
+}
+.thirdColumn{
+    background-color: lemonchiffon;
+    border-radius: 15px;
+}
+.appAndroid{
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 50%;
+    color: lightblue;
+}
+
+.appMac{
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 50%;
+    color: lightblue;
+}
+.appWindows{
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 50%;
+    color: lightblue;
+}
+.appBug{
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 50%;
+    color: lightblue;
+}
+.displaytext h2{
+font-weight: bold;
+color: cornflowerblue;
+}
