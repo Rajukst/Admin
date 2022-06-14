@@ -1,0 +1,13 @@
+.traffic-site{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px dotted lightgray;
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 15px;
+}
+.part{
+  border: 1px dotted lightgray;
+
+  margin: 10px;
+}

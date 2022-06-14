@@ -46,7 +46,7 @@ const RaderChart = () => {
             <HorizontalCharts></HorizontalCharts>
           </Col>
           <Col xs={12} md={3} lg={3}>
-            <div className="pieDataChart mt-4 p-3">
+            <div className="pieDataCharts mt-4 p-3">
               <Radar data={data} />;
             </div>
           </Col>
