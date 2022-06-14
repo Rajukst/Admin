@@ -1,81 +1,80 @@
 import React from 'react';
-import {
-    Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Legend,
-  } from 'chart.js';
-  import { Line } from 'react-chartjs-2';
-
-ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Legend
-  );
+import ReactApexChart from 'react-apexcharts';
 
 const DashboardChartTwo = () => {
- const options = {
-        responsive: true,
-        interaction: {
-          mode: 'index',
-          intersect: false,
-        },
-        stacked: false,
-        plugins: {
-          title: {
-            display: true,
-            text: 'Chart.js Line Chart - Multi Axis',
-          },
-        },
-        scales: {
-          y: {
-            type: 'linear',
-            display: true,
-            position: 'left',
-          },
-          y1: {
-            type: 'linear',
-            display: true,
-            position: 'right',
-            grid: {
-              drawOnChartArea: false,
-            },
-          },
-        },
-      };
-      
-      const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-      
-      const data = {
-        labels,
-        datasets: [
-          {
-            label: 'Dataset 1',
-         
-            borderColor: 'rgb(255, 99, 132)',
-            backgroundColor: 'rgba(255, 99, 132, 0.5)',
-            yAxisID: 'y',
-          },
-          {
-            label: 'Dataset 2',
-           
-            borderColor: 'rgb(53, 162, 235)',
-            backgroundColor: 'rgba(53, 162, 235, 0.5)',
-            yAxisID: 'y1',
-          },
-        ],
-      };
+ const series= [{
+    name: 'TEAM A',
+    type: 'column',
+    data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30]
+  }, {
+    name: 'TEAM B',
+    type: 'area',
+    data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43]
+  }, {
+    name: 'TEAM C',
+    type: 'line',
+    data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39]
+  }]
+  const options= {
+    chart: {
+      height: 350,
+      type: 'line',
+      stacked: false,
+    },
+    stroke: {
+      width: [0, 2, 5],
+      curve: 'smooth'
+    },
+    plotOptions: {
+      bar: {
+        columnWidth: '50%'
+      }
+    },
+    
+    fill: {
+      opacity: [0.85, 0.25, 1],
+      gradient: {
+        inverseColors: false,
+        shade: 'light',
+        type: "vertical",
+        opacityFrom: 0.85,
+        opacityTo: 0.55,
+        stops: [0, 100, 100, 100]
+      }
+    },
+    labels: ['01/01/2003', '02/01/2003', '03/01/2003', '04/01/2003', '05/01/2003', '06/01/2003', '07/01/2003',
+      '08/01/2003', '09/01/2003', '10/01/2003', '11/01/2003'
+    ],
+    markers: {
+      size: 0
+    },
+    xaxis: {
+      type: 'datetime'
+    },
+    yaxis: {
+      title: {
+        text: 'Points',
+      },
+      min: 0
+    },
+    tooltip: {
+      shared: true,
+      intersect: false,
+      y: {
+        formatter: function (y) {
+          if (typeof y !== "undefined") {
+            return y.toFixed(0) + " points";
+          }
+          return y;
+    
+        }
+      }
+    }
+  }
     return (
         <div>
-           <Line options={options} data={data} />;
+            <ReactApexChart options={options} series={series} type="line" height={350} />
+   
         </div>
     );
 };

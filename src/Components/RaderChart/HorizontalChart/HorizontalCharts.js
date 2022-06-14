@@ -1,57 +1,54 @@
 import React from 'react';
-import ReactApexChart from "apexcharts"
-const myData = {
-          
-    series: [{
-      name: 'PRODUCT A',
-      data: [44, 55, 41, 67, 22, 43, 21, 49]
-    }, {
-      name: 'PRODUCT B',
-      data: [13, 23, 20, 8, 13, 27, 33, 12]
-    }, {
-      name: 'PRODUCT C',
-      data: [11, 17, 15, 15, 21, 14, 15, 13]
-    }],
-    options: {
-      chart: {
-        type: 'bar',
-        height: 350,
-        stacked: true,
-        stackType: '100%'
-      },
-      responsive: [{
-        breakpoint: 480,
-        options: {
-          legend: {
-            position: 'bottom',
-            offsetX: -10,
-            offsetY: 0
-          }
-        }
-      }],
-      xaxis: {
-        categories: ['2011 Q1', '2011 Q2', '2011 Q3', '2011 Q4', '2012 Q1', '2012 Q2',
-          '2012 Q3', '2012 Q4'
-        ],
-      },
-      fill: {
-        opacity: 1
-      },
-      legend: {
-        position: 'right',
-        offsetX: 0,
-        offsetY: 50
-      },
-    },
-  
-  
-  };
+import ReactApexChart from "react-apexcharts"
+
+ 
 const HorizontalCharts = () => {
-     
-    return (
+
+ const series= [{
+    data: [44, 55, 41, 64, 22, 43, 21]
+  }, {
+    data: [53, 32, 33, 52, 13, 44, 32]
+  }]
+  const options= {
+    chart: {
+      type: 'bar',
+      height: 430
+    },
+    plotOptions: {
+      bar: {
+        horizontal: true,
+        dataLabels: {
+          position: 'top',
+        },
+      }
+    },
+    dataLabels: {
+      enabled: true,
+      offsetX: -6,
+      style: {
+        fontSize: '12px',
+        colors: ['#fff']
+      }
+    },
+    stroke: {
+      show: true,
+      width: 1,
+      colors: ['#fff']
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    xaxis: {
+      categories: [2001, 2002, 2003, 2004, 2005, 2006, 2007],
+    },
+  }
+  
+  return (
         <div>
-     <ReactApexChart options={myData.options} series={myData.series} type="bar" height={350} />
-        </div>
+   <ReactApexChart options={options} series={series} type="bar" height={430} />
+</div>
+    
     );
 };
 
