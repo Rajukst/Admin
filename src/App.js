@@ -7,13 +7,15 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Test from './Components/Test/Test';
 function App() {
   return (
     <div className="App">
    <BrowserRouter>
     <Routes>
-      {/* <Route path="/" element={<LeftDrawer />}/> */}
-      <Route path="/" element={<MainDashboard />}/>
+      <Route path="/" element={<Test />}/>
+      <Route path="/dashboard" element={<LeftDrawer />}/>
+
          
     </Routes>
   </BrowserRouter>
