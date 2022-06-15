@@ -7,16 +7,22 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Test from './Components/Test/Test';
+
+import UserList from './Components/DashboardComponents/UserList/UserList';
+import Login from './Components/DashboardComponents/Login/Login';
+import Registration from './Components/DashboardComponents/Registration/Registration';
 function App() {
   return (
     <div className="App">
    <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Test />}/>
-      <Route path="/dashboard" element={<LeftDrawer />}/>
 
-         
+
+      <Route path="/dashboard" element={<LeftDrawer />}/>
+      <Route path="/user" element={<UserList />}/>
+      <Route path="/" element={<MainDashboard />}/>
+      <Route path="/registration" element={<Registration />}/>
+      <Route path="/login" element={<Login />}/>
     </Routes>
   </BrowserRouter>
     </div>

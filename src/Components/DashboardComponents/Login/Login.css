@@ -1,0 +1,93 @@
+.login-page{
+
+    height: 100vh;
+}
+.wellcome{
+text-align: left;
+margin-left: 3rem;
+}
+.login-texts{
+text-align: left;
+}
+.my-section{
+    background-image: url("../../../Images/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-continer{
+    background-color: rgba(0, 0, 0, 0.096) ;
+    max-width: 700px;
+    margin: auto;
+    height: 70vh;
+    width: 100%;
+
+    justify-content: center;
+    border-radius: 10px;
+}
+.login-continer h2, h6{
+text-align: left;
+margin-left: 15px;
+}
+.user-container input{
+    width: 80%;
+    margin: 10px 30px;
+    height: 30px;
+
+    background: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.158) ;
+    color: white;
+}
+#fname{
+    height: 50px;
+}
+.all-buttons{
+    justify-content: space-around;
+    display: flex;
+   
+}
+.third-party-sign{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  
+}
+.google{
+background: none;
+    margin: 10px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.google:hover{
+    background-color: rgba(240, 248, 255, 0.219);
+    margin: 10px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.googleButton{
+    background: none;
+    border: none;
+    color: #db4a39;
+}
+.facebookButton{
+    background: none;
+    border: none;
+    color: #3B5998;
+}
+.twitterButton{
+    background: none;
+    border: none;
+    color: #00acee;
+}
+.register-link a{
+    text-decoration: none;
+}

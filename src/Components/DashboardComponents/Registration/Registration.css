@@ -1,0 +1,45 @@
+.section{
+    background-image: url("../../../Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my-continer{
+    background-color: rgba(0, 0, 0, 0.096) ;
+    max-width: 700px;
+    margin: auto;
+    height: 70vh;
+    width: 100%;
+
+    justify-content: center;
+    border-radius: 10px;
+}
+.get-started{
+text-align: left;
+color: white;
+}
+.user-container input{
+  
+    margin: 10px 30px;
+    height: 30px;
+    
+    background: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.158) ;
+    color: white;
+}
+
+.all-buttons{
+    justify-content: space-around;
+    display: flex;
+   
+}
+.name-input{
+    display: flex;
+    margin: 10px 30px;
+    height: 30px;
+    
+}
