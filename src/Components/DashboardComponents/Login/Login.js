@@ -38,12 +38,12 @@ const Login = () => {
                   </div>
                   <div className="google">
                     <button className="facebookButton">
-                      <i class="fa-brands fa-facebook-f "></i>
+                      <i class="fa-brands fa-facebook-f fa-2x "></i>
                     </button>
                   </div>
                   <div className="google">
                     <button className="twitterButton">
-                      <i class="fa-brands fa-twitter "></i>
+                      <i class="fa-brands fa-twitter fa-2x "></i>
                     </button>
                   </div>
                 </div>
