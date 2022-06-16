@@ -1,0 +1,55 @@
+.newsPortal{
+    background-color: aqua;
+    box-shadow: 2px 2px 2px 1px lightgray;
+    border-radius: 5px;
+
+}
+.newsUpdate h3{
+text-align: left;
+}
+.update-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid lightgray; */
+    margin: 10px;
+}
+.portal{
+    display: flex;
+}
+.avater-image{
+    border-radius: 50%;
+}
+.time{
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+.time-count{
+    margin: 10px;
+}
+.name-work{
+    margin: 10px;
+}
+.name-field{
+    font-size: 15px;
+    text-decoration: underline;
+}
+.second-nameField{
+    font-size: 15px;
+    color: gray;
+}
+.view-button{
+    background: none;
+    border: none;
+    text-align: right;
+}
+.view-button:hover{
+  background-color: rgba(189, 189, 189, 0.541);
+}
+.view-all{
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
