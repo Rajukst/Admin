@@ -7,9 +7,15 @@ import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-
+import UserList from "../DashboardComponents/UserList/UserList"
 import MainDashboard from "../Dashboard-main/MainDashboard";
-import { Link, NavLink, Route, Routes } from "react-router-dom";
+import Products from "../DashboardComponents/Products/Products"
+import { Link, Route, Routes } from "react-router-dom";
+import Login from "../DashboardComponents/Login/Login";
+import Registration from "../DashboardComponents/Registration/Registration";
+
+import "./LeftDrawer.css"
+
 const drawerWidth = 240;
 
 function LeftDrawer(props) {
@@ -23,21 +29,28 @@ function LeftDrawer(props) {
   const drawer = (
     <div>
       {/* sidebar started here */}
+
       {/* <NavLink
         className="hvr-underline-from-center navbar-NavLink nasted-nav"
         style={({ isActive }) => {
           return {
             color: isActive ? "white" : "",
             backgroundColor: isActive ? "#3749BB" : "",
+            textDecoration: "none",
+            width: '80%',
+            padding: '30px ',
           };
         }}
-        to="/"
+        to="user"
       >
         Dashboard
       </NavLink> */}
-<nav>
-        <Link to="me">My Profile</Link>
-      </nav>
+    <Link to="app"><button className="mt-2 my-buttons">Dashboard</button></Link>
+    <Link to="user"><button className="mt-2 my-buttons">User</button></Link>
+    <Link to="products"><button className="mt-2 my-buttons">Products</button></Link>
+    <Link to="blogs"><button className="mt-2 my-buttons">Blogs</button></Link>
+    <Link to="/login"><button className="mt-2 my-buttons">Login</button></Link>
+    <Link to="/registration"><button className="mt-2 my-buttons">Registration</button></Link>
       {/* sidebar closes here */}
     </div>
   );
@@ -116,7 +129,11 @@ function LeftDrawer(props) {
         <Toolbar />
         <Routes>
       
-        <Route path="me" element={<MainDashboard />} />
+        <Route path="app" element={<MainDashboard />} />
+        <Route path="user" element={<UserList />} />
+        <Route path="products" element={<Products />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
       </Routes>
       </Box>
     </Box>

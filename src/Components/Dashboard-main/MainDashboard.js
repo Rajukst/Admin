@@ -11,12 +11,7 @@ const MainDashboard = () => {
     <div>
         <Container fluid>
   <Row>
-    <Col xs={12} md={2} lg={2} >
-        <div className="left-content">
-        <h1>This is Lefft</h1>
-        </div>
-    </Col>
-    <Col xs={12} md={10} lg={10}>
+      <Col>
     <div className="right-content">
    <DashboardApp></DashboardApp>
    <DashboardChart></DashboardChart>
