@@ -5,15 +5,15 @@ import ShowProducts from './ShowProducts';
 const Products = () => {
     const [product, setProduct]= useState([])
     useEffect(()=>{
-        fetch()
+        fetch('https://jsonplaceholder.typicode.com/photos')
         .then(res=>res.json())
-        .then(data=>console.log(data))
+        .then(data=>setProduct(data))
     },[])
     return (
         <div>
-           <Row xs={1} md={2} className="g-4">
+           <Row xs={1} md={4} lg={4}  className="g-4">
             {
-                product.map(getProduct=><ShowProducts
+                product.slice(0, 40).map(getProduct=><ShowProducts
                 key={getProduct.id}
                 allProduct={getProduct}
                 ></ShowProducts> )

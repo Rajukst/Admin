@@ -15,6 +15,7 @@ import Login from "../DashboardComponents/Login/Login";
 import Registration from "../DashboardComponents/Registration/Registration";
 
 import "./LeftDrawer.css"
+import Blogs from "../DashboardComponents/Blogs/Blogs";
 
 const drawerWidth = 240;
 
@@ -132,6 +133,7 @@ function LeftDrawer(props) {
         <Route path="app" element={<MainDashboard />} />
         <Route path="user" element={<UserList />} />
         <Route path="products" element={<Products />} />
+        <Route path="blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
       </Routes>

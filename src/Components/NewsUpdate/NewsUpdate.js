@@ -102,7 +102,6 @@ const NewsUpdate = () => {
             <div className="order-text">
               <h3>Order Timeline</h3>
             </div>
-           
             <div className="vtl">
               <div className="event">
                 <p className="date">11 Mar 2237 12:34</p>
@@ -120,7 +119,6 @@ const NewsUpdate = () => {
                 <p className="date">14 Mar 2237 08:11</p>
                 <p className="txt">Hoomans to the rescue.</p>
               </div>
-           
             </div>
           </div>
         </Col>

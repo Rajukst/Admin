@@ -12,7 +12,7 @@ const TrafficTask = () => {
               <div className="traffic-column">
                 <div className="part">
                   <div className="displayicon pt-4">
-                    <i class="fa-brands fa-facebook-f fa-3x appFacebook"></i>
+                    <i className="fa-brands fa-facebook-f fa-3x appFacebook"></i>
                   </div>
                   <div className="displaytextd pb-4">
                     <h2>323.23k</h2>
@@ -23,7 +23,7 @@ const TrafficTask = () => {
               <div className="traffic-column">
                 <div className="part">
                   <div className="displayicon pt-4">
-                    <i class="fa-brands fa-google fa-3x appGoogle"></i>
+                    <i className="fa-brands fa-google fa-3x appGoogle"></i>
                   </div>
                   <div className="displaytextd pb-4">
                     <h2>323.23k</h2>
@@ -34,7 +34,7 @@ const TrafficTask = () => {
               <div className="traffic-column">
                 <div className="part">
                   <div className="displayicon pt-4">
-                    <i class="fa-brands fa-linkedin-in fa-3x appLinkedIn"></i>
+                    <i className="fa-brands fa-linkedin-in fa-3x appLinkedIn"></i>
                   </div>
                   <div className="displaytextd pb-4">
                     <h2>323.23k</h2>
@@ -45,7 +45,7 @@ const TrafficTask = () => {
               <div className="traffic-column">
                 <div className="part">
                   <div className="displayicon pt-4">
-                    <i class="fa-brands fa-twitter fa-3x appTwitter"></i>
+                    <i className="fa-brands fa-twitter fa-3x appTwitter"></i>
                   </div>
                   <div className="displaytextd pb-4">
                     <h2>323.23k</h2>

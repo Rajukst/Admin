@@ -33,12 +33,12 @@ const Registration = () => {
           </div>
           <div className="google">
             <button className="facebookButton">
-              <i class="fa-brands fa-facebook-f fa-2x"></i>
+              <i className="fa-brands fa-facebook-f fa-2x"></i>
             </button>
           </div>
           <div className="google">
             <button className="twitterButton">
-              <i class="fa-brands fa-twitter fa-2x "></i>
+              <i className="fa-brands fa-twitter fa-2x "></i>
             </button>
           </div>
         </div>
