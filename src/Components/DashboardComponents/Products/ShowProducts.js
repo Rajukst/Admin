@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container } from 'react-bootstrap';
 
 const ShowProducts = ({ allProduct}) => {
-    const {userId, id, title, thumbnailUrl}= allProduct;
+    const {userId, id, title, url}= allProduct;
     return (
         <Col>
     <Container fluid>
@@ -16,7 +16,7 @@ const ShowProducts = ({ allProduct}) => {
                      
                    </div>
                      <img
-                       src={thumbnailUrl}
+                       src={url}
                        className="img-fluid p-1"
                        alt="Girl in a jacket"
                      />
